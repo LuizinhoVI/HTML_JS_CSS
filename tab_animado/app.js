@@ -1,15 +1,12 @@
 let tabs = document.querySelectorAll(".tab");
 let overlay = document.querySelector(".overlay");
-
 let firstActive = document.querySelector(".tab-is-active");
 let activeColor = getComputedStyle(firstActive).background;
 overlay.style.background = activeColor;
 document.body.style.background = activeColor;
-
 tabs.forEach((tab) => {
   tab.addEventListener("click", function () {
     let tl = new TimelineLite();
-
     let accentColor = getComputedStyle(this).background;
     this.children[0].style.borderColor = accentColor;
     if (!this.classList.contains("tab-is-active")) {
