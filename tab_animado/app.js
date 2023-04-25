@@ -1,3 +1,4 @@
+// JS
 let tabs = document.querySelectorAll(".tab");
 let overlay = document.querySelector(".overlay");
 let firstActive = document.querySelector(".tab-is-active");

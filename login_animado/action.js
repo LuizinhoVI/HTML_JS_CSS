@@ -29,6 +29,7 @@
             function direita_a() {
                 direita.style.display = "none";
                 esquerda.style.display = "block";
+                
                 if (i == 1) {
                     direita.removeEventListener("mousemove", direita_a)
                     esquerda.style.display = "none";

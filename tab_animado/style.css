@@ -1,5 +1,5 @@
+/* CSS */
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic");
-
 body {
     display: flex;
     justify-content: center;
@@ -9,7 +9,6 @@ body {
     transition: 0.5s;
     overflow: hidden;
 }
-
 .overlay {
     height: 200vw;
     width: 200vw;
@@ -20,7 +19,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .nav {
     background-color: #fff;
     padding: 12px 5px;
@@ -29,14 +27,12 @@ body {
     position: relative;
     z-index: 99;
 }
-
 .tabs {
     display: flex;
     width: 490px;
     justify-content: space-around;
     list-style-type: none;
 }
-
 .tab {
     padding: 12px 22px;
     background-color: #e0efff;
@@ -52,7 +48,6 @@ body {
     position: relative;
     flex-basis: 120px;
 }
-
 .tab-is-active {
     max-width: 100px;
     box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);

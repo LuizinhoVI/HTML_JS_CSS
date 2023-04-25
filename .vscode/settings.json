@@ -2,5 +2,6 @@
     "workbench.colorCustomizations": {
         "minimap.background": "#00000000",
         "scrollbar.shadow": "#00000000"
-    }
+    },
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 5px 20px"
 }
