@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checklist 01</title>
+    <style>
+        @import url(https://unpkg.com/open-props/open-props.min.css);
+        @import url(https://unpkg.com/open-props/normalize.min.css);
+
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+        }
+
+        input {
+            accent-color: var(--green-8);
+        }
+
+        li {
+            display: flex;
+            gap: var(--size-2);
+        }
+
+        ul {
+            box-shadow: var(--shadow-5);
+            padding: var(--size-4);
+            border-radius: var(--radius-3);
+            border: 2px solid var(--text-2);
+            list-style-type: none;
+            display: grid;
+            gap: var(--size-2);
+            background: var(--surface-1);
+            transition: all 0.2s ease;
+        }
+
+        /* The double negative approach */
+        ul:not(:has(input:not(:checked))) {
+            background: var(--green-1);
+            border-color: var(--green-5);
+            color: var(--surface-3);
+        }
+
+        :checked+label {
+            font-style: italic;
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+
+<body bgcolor="black">
+    <ul>
+        <li class="item">
+            <input type="checkbox" id="milk">
+            <label for="milk">Get Milk</label>
+        </li>
+        <li class="item">
+            <input type="checkbox" id="test">
+            <label for="test">Write Tests</label>
+        </li>
+        <li class="item">
+            <input type="checkbox" id="trash">
+            <label for="trash">Take Out Trash</label>
+        </li>
+        <li class="item">
+            <input type="checkbox" id="css">
+            <label for="css">Learn CSS</label>
+        </li>
+    </ul>
+</body>
+
+</html>
